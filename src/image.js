@@ -10,6 +10,8 @@ import sharp from 'sharp';
     data = [...data, ...chunk];
   }
 
+  console.log("image data fetched, length:", data.length);
+
   const sharpImage = sharp(data);
   const { format, size, width, height } = await sharpImage.metadata();
 
