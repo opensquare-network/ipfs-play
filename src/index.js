@@ -12,4 +12,5 @@ import * as IPFS from 'ipfs-core'
   }
 
   console.log('data', data);
+  console.log('json', JSON.parse(data));
 })()
