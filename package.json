@@ -5,6 +5,7 @@
   "type": "module",
   "license": "MIT",
   "dependencies": {
+    "file-type": "^18.0.0",
     "ipfs-core": "0.16.0",
     "sharp": "^0.31.3"
   }
