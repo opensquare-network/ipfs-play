@@ -1,0 +1,10 @@
+{
+  "name": "ipfs-play",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+    "ipfs-core": "0.16.0"
+  }
+}
