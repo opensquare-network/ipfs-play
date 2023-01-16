@@ -9,11 +9,13 @@ const cids = [
 
 ;(async () => {
   for (const cid of cids) {
-    const data = (await axios({
+    const res = await axios({
       url: `https://ipfs.io/ipfs/${ cid }`,
       responseType: "arraybuffer",
-    })).data;
+    });
 
-    console.log(await fileTypeFromBuffer(data));
+    const data = res.data;
+    console.log("cid", cid, "res type", res.headers['content-type']);
+    console.log("parsed file type:", await fileTypeFromBuffer(data));
   }
 })();
